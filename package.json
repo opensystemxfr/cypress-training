@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opensystemxfr/cypress-training.git"
+    "url": "git+https://github.com/xiomaraflorezr/cypress-training.git"
   },
   "keywords": [
     "ui-testing",
@@ -16,7 +16,7 @@
     "practice",
     "cypress"
   ],
-  "author": "Xiomara <xiomara.f@gmail.com> (opensystemxfr)",
+  "author": "Xiomara <xiomara.f@gmail.com> (xiomaraflorezr)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/opensystemxfr/cypress-training/issues"
