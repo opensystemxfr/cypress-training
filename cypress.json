@@ -1,8 +1,11 @@
 {
-"video": false,
- "defaultCommandTimeout": 20000,
- "responseTimeout": 20000,
-"reporter": "cypress-multi-reporters",
+    "viewportWidth": 1500,
+    "viewportHeight": 1200,
+    "integrationFolder": "cypress/",
+    "video": false,
+    "defaultCommandTimeout": 20000,
+    "responseTimeout": 20000,
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
         "mochawesomeReporterOptions": {
@@ -13,5 +16,4 @@
             "json": true
         }
     }
-
 }
