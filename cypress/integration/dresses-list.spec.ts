@@ -1,7 +1,7 @@
-import { MenuContentPage, DressesListPage } from '../page/index'
+import { MenuContentPage, DressesListPage } from "../page/index"
 
 
-describe('the user navigates to the dresses page should', () => {
+describe("the user navigates to the dresses page should", () => {
 
   let menuContentPage: MenuContentPage;
   let dressesListPage: DressesListPage;
@@ -11,7 +11,7 @@ describe('the user navigates to the dresses page should', () => {
     dressesListPage = new DressesListPage();
   })
 
-  it('show the available dresses', () => {
+  it("show the available dresses", () => {
     // ... realiza la prueba
   })
 })

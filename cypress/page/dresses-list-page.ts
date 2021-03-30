@@ -3,25 +3,26 @@ class DressesListPage {
   private dressItem: string;
   private dressName: string;
 
-  constructor(){
+  constructor() {
     this.dressItem = '.product-container'
     this.dressName = `${this.dressItem} .product-name`
   }
 
-  getDressProducts(){
+  getDressProducts() {
     return cy.get(this.dressItem)
   }
 
-  validateItemsNumber(itemsNumber: number){
-    cy.get(this.dressItem).should('have.length', itemsNumber)
+  validateItemsNumber(itemsNumber: number) {
+    return cy.get(this.dressItem).should('have.length', itemsNumber)
+
   }
 
-  validateItemsNames(names: string[]){
+  validateItemsNames(names: string[]) {
     cy.get(this.dressName).each((item, index) => {
-      cy.wrap(item).should('contain.text', names[index])
+      cy.wrap(item).should('contain.text', names[index]);
+
     })
   }
-
 }
 
-export {DressesListPage}
+export { DressesListPage }
