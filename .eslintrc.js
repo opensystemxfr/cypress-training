@@ -14,10 +14,11 @@ module.exports = {
     },
     "plugins": [
         "@typescript-eslint",
-		cypress"
+        "cypress"
     ],
     "rules": {
-		"quotes": ["error", "double"],
+
+        "quotes": ["error", "double"],
         "cypress/no-assigning-return-values": "error",
         "cypress/no-unnecessary-waiting": "error",
         "cypress/assertion-before-screenshot": "warn",

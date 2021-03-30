@@ -5,20 +5,20 @@ class PaymentStepPage {
 
     constructor() {
         this.BtBankWire = '.bankwire';
-        this.BtnExecutePayment = '.button btn btn-default button-medium'
-        this.CenterColumn = '.cheque-indent'
+        this.BtnExecutePayment = '#cart_navigation > button'
+        this.CenterColumn = '.cheque-indent > .dark'
     }
 
-    public PressBankWire(): void {
+    public pressBankWire(): void {
         cy.get(this.BtBankWire).click()
     }
 
-    public MakePayment(): void {
+    public makePayment(): void {
         cy.get(this.BtnExecutePayment).click()
     }
 
-    public CheckMessage(): void {
-        cy.get(this.CenterColumn).should('have.text', 'Your order on My Store is complete.')
+    public checkMessage(paymentmessage: string): void {
+        cy.get(this.CenterColumn).should('have.text', paymentmessage)
     }
 }
 

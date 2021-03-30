@@ -8,11 +8,11 @@ class ShopingCartPage {
     }
 
 
-    public LookShopingCart(): void {
+    public lookShopingCart(): void {
         cy.get(this.ShopingCart).click()
     }
 
-    public goToCartNavigation(): void {
+    public makePayment(): void {
         cy.get(this.CartNavigation).click()
     }
 }

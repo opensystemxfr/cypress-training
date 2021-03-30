@@ -7,11 +7,11 @@ class ShippingStepPage {
         this.BtnExecutePayment = '.cart_navigation span'
     }
 
-    public PressTerm(): void {
+    public pressTerm(): void {
         cy.get(this.CheckTerm).click()
     }
 
-    public MakePayment(): void {
+    public makePayment(): void {
         cy.get(this.BtnExecutePayment).click()
     }
 }

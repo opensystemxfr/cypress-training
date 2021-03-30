@@ -7,11 +7,11 @@ class AddressStepPage {
         this.BtnExecutePayment = '.cart_navigation span'
     }
 
-    public PressLogin(): void {
+    public pressLogin(): void {
         cy.get(this.BottonLogin).click()
     }
 
-    public MakePayment(): void {
+    public makePayment(): void {
         cy.get(this.BtnExecutePayment).click()
     }
 }

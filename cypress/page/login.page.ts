@@ -7,11 +7,11 @@ class LoginPage {
         this.TypePass = '#passwd'
     }
 
-    public Email(): void {
+    public email(): void {
         cy.get(this.TypeEmail).type('aperdomobo@gmail.com')
     }
 
-    public Pass(): void {
+    public pass(): void {
         cy.get(this.TypePass).type('WorkshopProtractor')
     }
 }

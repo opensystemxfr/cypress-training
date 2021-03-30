@@ -17,24 +17,23 @@ describe('Buy a t-shirt', () => {
     menuContentPage.visitMenuContentPage()
     menuContentPage.goToTShirtMenu()
 
-    productsListPage.LookProductList()
+    productsListPage.lookProductList()
     productsListPage.goToAddCart()
 
-    shopingCartPage.LookShopingCart()
-    shopingCartPage.goToCartNavigation()
+    shopingCartPage.lookShopingCart()
+    shopingCartPage.makePayment()
 
-    loginPage.Email()
-    loginPage.Pass()
+    loginPage.email()
+    loginPage.pass()
 
-    // Debes completar la prueba ...
-    addressStepPage.PressLogin()
-    addressStepPage.MakePayment()
+    addressStepPage.pressLogin()
+    addressStepPage.makePayment()
 
-    shippingStepPage.PressTerm()
-    shippingStepPage.MakePayment()
+    shippingStepPage.pressTerm()
+    shippingStepPage.makePayment()
 
-    paymentStepPage.PressBankWire()
-    paymentStepPage.MakePayment()
-    paymentStepPage.CheckMessage()
+    paymentStepPage.pressBankWire()
+    paymentStepPage.makePayment()
+    paymentStepPage.checkMessage("Your order on My Store is complete.")
   });
 });
