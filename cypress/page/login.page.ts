@@ -5,7 +5,6 @@ class LoginPage {
     constructor() {
         this.TypeEmail = '#email';
         this.TypePass = '#passwd'
-
     }
 
     public Email(): void {
@@ -15,7 +14,6 @@ class LoginPage {
     public Pass(): void {
         cy.get(this.TypePass).type('WorkshopProtractor')
     }
-
 }
 
 export {LoginPage}

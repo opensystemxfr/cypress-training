@@ -3,7 +3,7 @@ class MenuContentPage {
     private menuContentPageURL: string
 
     constructor() {
-        //this.tShirtMenu = '#block_top_menu > ul > li:nth-child(3) > a';
+        /*this.tShirtMenu = '#block_top_menu > ul > li:nth-child(3) > a';*/
         this.tShirtMenu = '[class=sf-with-ul]'; //Proposal
         this.menuContentPageURL = 'http://automationpractice.com/'
     }
@@ -13,10 +13,13 @@ class MenuContentPage {
     }
 
     public goToTShirtMenu(): void {
-       // cy.get(this.tShirtMenu).click()
+        /* cy.get(this.tShirtMenu).click()*/
         cy.get(this.tShirtMenu).eq(0).click(); //Proposal
     }
 
+    public goToTDressesMenu(): void {
+        cy.get(this.tShirtMenu).eq(3).click();
+    }
 }
 
 export { MenuContentPage }

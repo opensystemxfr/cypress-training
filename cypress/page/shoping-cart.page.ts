@@ -4,9 +4,9 @@ class ShopingCartPage {
 
     constructor() {
         this.ShopingCart = '[style*="display: block;"] .button-container > a';
-        this.CartNavigation = '.cart_navigation span'   
+        this.CartNavigation = '.cart_navigation span'
     }
-    
+
 
     public LookShopingCart(): void {
         cy.get(this.ShopingCart).click()
@@ -15,7 +15,5 @@ class ShopingCartPage {
     public goToCartNavigation(): void {
         cy.get(this.CartNavigation).click()
     }
-
 }
-
-export {ShopingCartPage}
+export { ShopingCartPage }

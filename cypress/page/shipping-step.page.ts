@@ -1,22 +1,19 @@
 class ShippingStepPage {
     private CheckTerm: string;
-    private CartNavigation: string
+    private BtnExecutePayment: string
 
     constructor() {
         this.CheckTerm = '#cgv';
-        this.CartNavigation = '.cart_navigation span'
-    
-
+        this.BtnExecutePayment = '.cart_navigation span'
     }
 
     public PressTerm(): void {
         cy.get(this.CheckTerm).click()
     }
 
-    public PressNavigation(): void {
-        cy.get(this.CartNavigation).click()
+    public MakePayment(): void {
+        cy.get(this.BtnExecutePayment).click()
     }
-
 }
 
-export {ShippingStepPage}
+export { ShippingStepPage }

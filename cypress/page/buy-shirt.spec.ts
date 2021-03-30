@@ -11,8 +11,6 @@ const addressStepPage = new AddressStepPage()
 const shippingStepPage = new ShippingStepPage()
 const paymentStepPage = new PaymentStepPage()
 
-
-
 describe('Buy a t-shirt', () => {
 
   it('then the t-shirt should be bought', () => {
@@ -30,15 +28,13 @@ describe('Buy a t-shirt', () => {
 
     // Debes completar la prueba ...
     addressStepPage.PressLogin()
-    addressStepPage.PressNavigation()
+    addressStepPage.MakePayment()
 
     shippingStepPage.PressTerm()
-    shippingStepPage.PressNavigation()
+    shippingStepPage.MakePayment()
 
     paymentStepPage.PressBankWire()
-    paymentStepPage.PressNavigation()
+    paymentStepPage.MakePayment()
     paymentStepPage.CheckMessage()
-
-
   });
 });
